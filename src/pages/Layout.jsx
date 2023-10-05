@@ -1,18 +1,15 @@
 import React from 'react'
-import { Header } from '../components/Header'
+import { Header } from '../components/Header.jsx'
+import { MainContainer } from '../components/MainContainer.jsx'
+import { Footer } from '../components/Footer.jsx'
 
 
 export const Layout = () => {
      return (
-          <div>
+          <div className='flex flex-col min-h-screen'>
                <Header />
-               <nav>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-               </nav>
-               <main></main>
-               <footer></footer>
+               <MainContainer />
+               <Footer />
           </div>
      )
 }
