@@ -4,7 +4,7 @@ import { Carrousel } from "./Carrousel.jsx";
 export const MainContainer = () => {
      return (
           <main className=" flex flex-col bg-blue-200 grow">
-               <section className=" h-[85vh] flex flex-col justify-start gap-12 pt-12" style={{ backgroundImage: `url('src/assets/river.jpg')` , backgroundSize: 'cover' }}>
+               <section className=" h-[95vh] flex flex-col justify-start gap-12 pt-12" style={{ backgroundImage: `url('src/assets/river.jpg')` , backgroundSize: 'cover' }}>
                     <h1 className=" text-8xl font-extrabold tracking-tight  text-orange-300 drop-shadow-lg">MyTinerary</h1>
                     <h3 className=" text-3xl">
                          Find your perfect trip, designed by insiders who know and love their

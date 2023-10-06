@@ -53,17 +53,17 @@ export const Carrousel = () => {
   console.log("dataEvents: ", dataEvents);
 
   return (
-    <div className="flex w-full p-2 gap-2 h-[50vh]">
+    <div className="flex w-4/5 p-2 gap-2 h-[50vh] self-center">
       <ArrowCircleLeftIcon
         fontSize="large"
-        className=" text-stone-600 self-center hover:scale-110 hover:text-purple-700 cursor-pointer"
+        className=" text-white self-center hover:scale-110 hover:text-purple-700 cursor-pointer"
         onClick={() => modificarIndice(indice)}
       />
       {arrayDeSlides.length > 0 &&
           <span className=" inline-grid grid-cols-2 grow gap-2">
             {dataEvents.length > 0 &&
               arrayDeSlides[indice].map((evento) => (
-                <div className="flex justify-center group grayscale-[60%] hover:grayscale-0 rounded-md drop-shadow-lg" key={evento.name} style={{ backgroundImage: `url('${evento.image}')`, backgroundSize: 'cover' }}>
+                <div className="flex justify-center z-0 hover:z-50 group grayscale-[75%] hover:grayscale-0 rounded-md drop-shadow-lg transform transition-transform duration-500 ease-in-out hover:scale-110" key={evento.name} style={{ backgroundImage: `url('${evento.image}')`, backgroundSize: 'cover' }}>
                   <h2 className=" drop-shadow-lg text-lg self-end bg-gradient-to-r from-sky-500 to-indigo-500 w-full  opacity-90 group-hover:bg-gradient-to-l  group-hover:text-orange-300">{evento.name}</h2>
                 </div>
               ))}
@@ -71,7 +71,7 @@ export const Carrousel = () => {
       }
       <ArrowCircleRightIcon
         fontSize="large"
-        className=" text-stone-600 self-center hover:scale-110 hover:text-purple-700 cursor-pointer"
+        className=" text-white self-center hover:scale-110 hover:text-purple-700 cursor-pointer"
         onClick={() => modificarIndice(indice)}
       />
     </div>
