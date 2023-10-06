@@ -1,7 +1,7 @@
 import React from "react";
-import { Carrousel } from "./Carrousel.jsx";
+import { Carrousel } from "../components/Carrousel";
 
-export const MainContainer = () => {
+export const Home = () => {
      return (
           <main className=" flex flex-col bg-blue-200 grow">
                <section className=" h-[95vh] flex flex-col justify-start gap-12 pt-12" style={{ backgroundImage: `url('src/assets/river.jpg')` , backgroundSize: 'cover' }}>
