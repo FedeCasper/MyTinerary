@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
-export const Carrousel = () => {
+const Carrousel = () => {
   const [dataEvents, setDataEvents] = useState([]);
   const [arrayDeSlides, setArrayDeSlides] = useState([]);
   const [indice, setIndice] = useState(0);
@@ -77,3 +77,5 @@ export const Carrousel = () => {
     </div>
   );
 };
+
+export default Carrousel

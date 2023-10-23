@@ -1,7 +1,6 @@
-import React from 'react'
-import { Navbar } from './Navbar'
+import Navbar  from './Navbar.jsx'
 
-export const Header = () => {
+const Header = () => {
      return (
           <header className=' bg-teal-100 h-[20]'>
                <div className='flex justify-center py-2 gap-10'>
@@ -14,3 +13,5 @@ export const Header = () => {
           </header>
      )
 }
+
+export default Header
